@@ -1,0 +1,1340 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='win' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8300.15.0219.2230                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='MBS (C##CS329E_RY2634)' inline='true' name='oracle.42116.618074085651' version='8.3'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_RY2634' server='129.152.144.84' service='ORCL.usuniversi01134.oraclecloud.internal' username='C##cs329e_ry2634'>
+        <relation name='MBS' table='[C##CS329E_RY2634].[MBS]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LTV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LTV]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>LTV</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLTV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CLTV]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>CLTV</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIG_BAL</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ORIG_BAL]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>ORIG_BAL</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>9</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIG_TERM</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ORIG_TERM]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>ORIG_TERM</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIG_RATE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ORIG_RATE]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>ORIG_RATE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FICO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FICO]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>FICO</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OCCUPANCY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OCCUPANCY]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>OCCUPANCY</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TYPE]</local-name>
+            <parent-name>[MBS]</parent-name>
+            <remote-alias>TYPE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cltv' datatype='real' name='[CLTV]' role='measure' type='quantitative'>
+      </column>
+      <column caption='MBS #1' datatype='integer' name='[Calculation_0430422150131898]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[FICO]' scope-isolation='false' />
+      </column>
+      <column caption='MBS #1 CLTV' datatype='real' name='[Calculation_5050422153505125]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[CLTV]' scope-isolation='false' />
+      </column>
+      <column caption='Interest Rate' datatype='real' name='[Calculation_9540422151753745]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[ORIG_RATE]' scope-isolation='false' />
+      </column>
+      <column caption='Fico' datatype='integer' name='[FICO]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Occupancy' datatype='string' name='[OCCUPANCY]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Orig Bal' datatype='integer' name='[ORIG_BAL]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Orig Rate' datatype='real' name='[ORIG_RATE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Orig Term' datatype='integer' name='[ORIG_TERM]' role='measure' type='quantitative'>
+      </column>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Type' datatype='string' name='[TYPE]' role='dimension' type='nominal'>
+      </column>
+      <column-instance column='[Calculation_0430422150131898]' derivation='Avg' name='[avg:Calculation_0430422150131898:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_5050422153505125]' derivation='Avg' name='[avg:Calculation_5050422153505125:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_9540422151753745]' derivation='Avg' name='[avg:Calculation_9540422151753745:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[oracle.42116.618074085651].[avg:Calculation_0430422150131898:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[oracle.42116.618074085651].[avg:Calculation_9540422151753745:qk]&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;[oracle.42116.618074085651].[avg:Calculation_5050422153505125:qk]&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;[oracle.42116.633888275464].[avg:Calculation_7220422151822692:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[oracle.42116.633888275464].[sum:Calculation_7220422151822692:qk]&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;[oracle.42116.620266793980].[avg:Calculation_2790422153613411:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[oracle.42116.620266793980].[avg:Calculation_1750422150107598:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='oracle.42116.620266793980'>
+        <column caption='MBS #2' datatype='integer' name='[Calculation_1750422150107598]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='[FICO]' scope-isolation='false' />
+        </column>
+        <column caption='MBS #2 CLTV' datatype='real' name='[Calculation_2790422153613411]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='[CLTV]' scope-isolation='false' />
+        </column>
+        <column-instance column='[Calculation_1750422150107598]' derivation='Avg' name='[avg:Calculation_1750422150107598:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_2790422153613411]' derivation='Avg' name='[avg:Calculation_2790422153613411:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <datasource-dependencies datasource='oracle.42116.633888275464'>
+        <column caption='Unemployment Rate' datatype='real' name='[Calculation_7220422151822692]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='[RATE]' scope-isolation='false' />
+        </column>
+        <column-instance column='[Calculation_7220422151822692]' derivation='Avg' name='[avg:Calculation_7220422151822692:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_7220422151822692]' derivation='Sum' name='[sum:Calculation_7220422151822692:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+    </datasource>
+    <datasource caption='MBS2 (C##CS329E_RY2634)' inline='true' name='oracle.42116.620266793980' version='8.3'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_RY2634' server='129.152.144.84' service='ORCL.usuniversi01134.oraclecloud.internal' username='C##cs329e_ry2634'>
+        <relation name='MBS2' table='[C##CS329E_RY2634].[MBS2]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LTV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LTV]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>LTV</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLTV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CLTV]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>CLTV</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIG_BAL</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ORIG_BAL]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>ORIG_BAL</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>9</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIG_TERM</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[ORIG_TERM]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>ORIG_TERM</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIG_RATE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ORIG_RATE]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>ORIG_RATE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FICO</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FICO]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>FICO</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OCCUPANCY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OCCUPANCY]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>OCCUPANCY</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TYPE]</local-name>
+            <parent-name>[MBS2]</parent-name>
+            <remote-alias>TYPE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>3</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cltv' datatype='real' name='[CLTV]' role='measure' type='quantitative'>
+      </column>
+      <column caption='MBS #2' datatype='integer' name='[Calculation_1750422150107598]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[FICO]' scope-isolation='false' />
+      </column>
+      <column caption='MBS #2 CLTV' datatype='real' name='[Calculation_2790422153613411]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[CLTV]' scope-isolation='false' />
+      </column>
+      <column caption='Fico' datatype='integer' name='[FICO]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Occupancy' datatype='string' name='[OCCUPANCY]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Orig Bal' datatype='integer' name='[ORIG_BAL]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Orig Rate' datatype='real' name='[ORIG_RATE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Orig Term' datatype='integer' name='[ORIG_TERM]' role='measure' type='quantitative'>
+      </column>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Type' datatype='string' name='[TYPE]' role='dimension' type='nominal'>
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='UNEMPLOYMENT (C##CS329E_RY2634)' inline='true' name='oracle.42116.633888275464' version='8.3'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_RY2634' server='129.152.144.84' service='ORCL.usuniversi01134.oraclecloud.internal' username='C##cs329e_ry2634'>
+        <relation name='UNEMPLOYMENT' table='[C##CS329E_RY2634].[UNEMPLOYMENT]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[UNEMPLOYMENT]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RATE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RATE]</local-name>
+            <parent-name>[UNEMPLOYMENT]</parent-name>
+            <remote-alias>RATE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Unemployment Rate' datatype='real' name='[Calculation_7220422151822692]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[RATE]' scope-isolation='false' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Rate' datatype='real' name='[RATE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='oracle.42116.618074085651'>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+      </column>
+      <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='oracle.42116.620266793980'>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+      </column>
+      <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='oracle.42116.633888275464'>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+      </column>
+      <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='oracle.42116.618074085651' target='oracle.42116.620266793980'>
+      <column-mapping>
+        <map key='[oracle.42116.618074085651].[none:STATE:nk]' value='[oracle.42116.620266793980].[none:STATE:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+    <datasource-relationship source='oracle.42116.618074085651' target='oracle.42116.633888275464'>
+      <column-mapping>
+        <map key='[oracle.42116.618074085651].[none:STATE:nk]' value='[oracle.42116.633888275464].[none:STATE:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <worksheets>
+    <worksheet name='AVG CLTV by State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MBS (C##CS329E_RY2634)' name='oracle.42116.618074085651' />
+            <datasource caption='MBS2 (C##CS329E_RY2634)' name='oracle.42116.620266793980' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.42116.618074085651'>
+            <column caption='MBS #1 CLTV' datatype='real' name='[Calculation_5050422153505125]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[CLTV]' scope-isolation='false' />
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[Calculation_5050422153505125]' derivation='Avg' name='[avg:Calculation_5050422153505125:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='oracle.42116.620266793980'>
+            <column caption='MBS #2 CLTV' datatype='real' name='[Calculation_2790422153613411]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[CLTV]' scope-isolation='false' />
+            </column>
+            <column-instance column='[Calculation_2790422153613411]' derivation='Avg' name='[avg:Calculation_2790422153613411:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[oracle.42116.618074085651].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.618074085651].[avg:Calculation_5050422153505125:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.620266793980].[avg:Calculation_2790422153613411:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[oracle.42116.618074085651].[none:STATE:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:STATE:nk]' member='&quot;CA&quot;' />
+              <groupfilter function='member' level='[none:STATE:nk]' member='&quot;MD&quot;' />
+              <groupfilter function='member' level='[none:STATE:nk]' member='&quot;TX&quot;' />
+              <groupfilter function='member' level='[none:STATE:nk]' member='&quot;VT&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[oracle.42116.618074085651].[:Measure Names]</column>
+            <column>[oracle.42116.618074085651].[none:STATE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='subtitle' class='0' field='[oracle.42116.618074085651].[Multiple Values]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[oracle.42116.618074085651].[Multiple Values]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[oracle.42116.618074085651].[Multiple Values]' field-type='quantitative' max='94.0' min='66.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[oracle.42116.618074085651].[:Measure Names]' value='75' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.42116.618074085651].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[oracle.42116.618074085651].[Multiple Values]</rows>
+        <cols>([oracle.42116.618074085651].[none:STATE:nk] / [oracle.42116.618074085651].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='AVG Fico by State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MBS (C##CS329E_RY2634)' name='oracle.42116.618074085651' />
+            <datasource caption='MBS2 (C##CS329E_RY2634)' name='oracle.42116.620266793980' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.42116.618074085651'>
+            <column caption='MBS #1' datatype='integer' name='[Calculation_0430422150131898]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[FICO]' scope-isolation='false' />
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[Calculation_0430422150131898]' derivation='Avg' name='[avg:Calculation_0430422150131898:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='oracle.42116.620266793980'>
+            <column caption='MBS #2' datatype='integer' name='[Calculation_1750422150107598]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[FICO]' scope-isolation='false' />
+            </column>
+            <column-instance column='[Calculation_1750422150107598]' derivation='Avg' name='[avg:Calculation_1750422150107598:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[oracle.42116.618074085651].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.618074085651].[avg:Calculation_0430422150131898:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[oracle.42116.620266793980].[avg:Calculation_1750422150107598:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[oracle.42116.618074085651].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[oracle.42116.618074085651].[avg:Calculation_0430422150131898:qk]&quot;</bucket>
+              <bucket>&quot;[oracle.42116.620266793980].[avg:Calculation_1750422150107598:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <filter class='categorical' column='[oracle.42116.618074085651].[none:STATE:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:STATE:nk]' member='&quot;CA&quot;' />
+              <groupfilter function='member' level='[none:STATE:nk]' member='&quot;MD&quot;' />
+              <groupfilter function='member' level='[none:STATE:nk]' member='&quot;TX&quot;' />
+              <groupfilter function='member' level='[none:STATE:nk]' member='&quot;VT&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[oracle.42116.618074085651].[:Measure Names]</column>
+            <column>[oracle.42116.618074085651].[none:STATE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[oracle.42116.618074085651].[:Measure Names]' value='99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.42116.618074085651].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[oracle.42116.618074085651].[Multiple Values]</rows>
+        <cols>([oracle.42116.618074085651].[none:STATE:nk] / [oracle.42116.618074085651].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='FICO v Unemployment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MBS (C##CS329E_RY2634)' name='oracle.42116.618074085651' />
+            <datasource caption='UNEMPLOYMENT (C##CS329E_RY2634)' name='oracle.42116.633888275464' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.42116.618074085651'>
+            <column caption='Fico' datatype='integer' name='[FICO]' role='measure' type='quantitative'>
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[FICO]' derivation='Avg' name='[avg:FICO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='oracle.42116.633888275464'>
+            <column caption='Unemployment Rate' datatype='real' name='[Calculation_7220422151822692]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[RATE]' scope-isolation='false' />
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[Calculation_7220422151822692]' derivation='Avg' name='[avg:Calculation_7220422151822692:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='subtitle' class='0' field='[oracle.42116.618074085651].[avg:FICO:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[oracle.42116.618074085651].[avg:FICO:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[oracle.42116.618074085651].[avg:FICO:qk]' field-type='quantitative' max='800.0' min='500.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='subtitle' class='0' field='[oracle.42116.633888275464].[avg:Calculation_7220422151822692:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[oracle.42116.633888275464].[avg:Calculation_7220422151822692:qk]' scope='cols' value='true' />
+            <encoding attr='space' class='0' field='[oracle.42116.633888275464].[avg:Calculation_7220422151822692:qk]' field-type='quantitative' max='7.5' min='2.5' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.42116.633888275464].[none:STATE:nk]' />
+              <text column='[oracle.42116.633888275464].[none:STATE:nk]' />
+              <lod column='[oracle.42116.618074085651].[none:STATE:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[oracle.42116.618074085651].[avg:FICO:qk]</rows>
+        <cols>[oracle.42116.633888275464].[avg:Calculation_7220422151822692:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Interest v Unemployment by State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MBS (C##CS329E_RY2634)' name='oracle.42116.618074085651' />
+            <datasource caption='UNEMPLOYMENT (C##CS329E_RY2634)' name='oracle.42116.633888275464' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.42116.618074085651'>
+            <column caption='Interest Rate' datatype='real' name='[Calculation_9540422151753745]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[ORIG_RATE]' scope-isolation='false' />
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[Calculation_9540422151753745]' derivation='Avg' name='[avg:Calculation_9540422151753745:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='oracle.42116.633888275464'>
+            <column caption='Unemployment Rate' datatype='real' name='[Calculation_7220422151822692]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[RATE]' scope-isolation='false' />
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+            </column>
+            <column-instance column='[Calculation_7220422151822692]' derivation='Avg' name='[avg:Calculation_7220422151822692:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[oracle.42116.633888275464].[none:STATE:nk]'>
+            <groupfilter from='&quot;AK&quot;' function='range' level='[none:STATE:nk]' to='&quot;WY&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[oracle.42116.633888275464].[none:STATE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='subtitle' class='0' field='[oracle.42116.618074085651].[avg:Calculation_9540422151753745:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[oracle.42116.618074085651].[avg:Calculation_9540422151753745:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[oracle.42116.618074085651].[avg:Calculation_9540422151753745:qk]' field-type='quantitative' max='10.01' min='6.5999999999999996' range-type='fixed' scope='rows' type='space' />
+            <format attr='subtitle' class='0' field='[oracle.42116.633888275464].[avg:Calculation_7220422151822692:qk]' scope='cols' value='' />
+            <format attr='auto-subtitle' class='0' field='[oracle.42116.633888275464].[avg:Calculation_7220422151822692:qk]' scope='cols' value='true' />
+            <encoding attr='space' class='0' field='[oracle.42116.633888275464].[avg:Calculation_7220422151822692:qk]' field-type='quantitative' max='8.0' min='2.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.42116.618074085651].[none:STATE:nk]' />
+              <text column='[oracle.42116.633888275464].[none:STATE:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[oracle.42116.618074085651].[avg:Calculation_9540422151753745:qk]</rows>
+        <cols>[oracle.42116.633888275464].[avg:Calculation_7220422151822692:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='0' name='AVG Fico by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='3' param='[oracle.42116.618074085651].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[oracle.42116.618074085651].[none:STATE:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42116.618074085651].[:Measure Names]</field>
+          <field>[oracle.42116.618074085651].[avg:Calculation_0430422150131898:qk]</field>
+          <field>[oracle.42116.618074085651].[none:STATE:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Interest v Unemployment by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[oracle.42116.618074085651].[none:STATE:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[oracle.42116.633888275464].[none:STATE:nk]' show-domain='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42116.618074085651].[:Measure Names]</field>
+          <field>[oracle.42116.618074085651].[none:OCCUPANCY:nk]</field>
+          <field>[oracle.42116.618074085651].[none:STATE:nk]</field>
+          <field>[oracle.42116.633888275464].[none:STATE:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='AVG CLTV by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+            <card pane-specification-id='1' param='[oracle.42116.618074085651].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[oracle.42116.618074085651].[none:STATE:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42116.618074085651].[:Measure Names]</field>
+          <field>[oracle.42116.618074085651].[none:STATE:nk]</field>
+          <field>[oracle.42116.620266793980].[none:STATE:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='1' name='FICO v Unemployment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[oracle.42116.633888275464].[none:STATE:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42116.618074085651].[none:STATE:nk]</field>
+          <field>[oracle.42116.633888275464].[none:STATE:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='AVG Fico by State' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Interest v Unemployment by State' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='AVG CLTV by State' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='FICO v Unemployment' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
